@@ -9,7 +9,7 @@ It uses the same api your browser would contact when using the website.
 Not yet installable. You can clone this repo if you would like to try it out. I will make it installable when the basic features are implemented.
 (todo)
 
-I do not provide the api endpoint. You will need to set this up on your own. You can place a file ```api_endpoint.txt``` in ```fotoparadies``` containing just the endpoint or specify the endpoint in your environment variables as ```FOTOPARADIES_API_URL```. If your default shell is bash you can use:
+I do not provide the api endpoint. You will need to set this up on your own. You can place a file ```api_endpoint.txt``` in root of package containing just the endpoint or specify the endpoint in your environment variables as ```FOTOPARADIES_API_URL```. If your default shell is bash you can use:
 
 ```bash
 echo 'export FOTOPARADIES_API_URL=<API_URL>' >> ~/.bash_profile
