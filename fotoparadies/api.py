@@ -11,7 +11,10 @@ if 'FOTOPARADIES_API_URL' in os.environ:
 
 def get_order_info(shop, order):
     p = {'config':1320, 'shop': shop, 'order': order}
-    r = requests.get(URL, params=p)
+    if URL:
+        r = requests.get(URL, params=p)
+    else:
+        raise Exception('No API endpoint', URL)
     return r.json()
 
 def get_order_status(shop, order):
