@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(name='fotoparadies-orders-cli-avra',
-      version='0.1',
+      version='0.1a1',
       description='Unofficial command line interface for keeping track of dm Fotoparadies orders.',
       scripts=['./scripts/fotoparadies'],
       long_description=long_description,

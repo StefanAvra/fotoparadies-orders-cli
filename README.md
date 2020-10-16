@@ -6,8 +6,11 @@ You can use it to store a list of orders (todo) or check your order directly via
 It uses the same api your browser would contact when using the website.
 
 ## Installation
-Not yet installable. You can clone this repo if you would like to try it out. I will make it installable when the basic features are implemented.
-(todo)
+You can install it from PyPi
+
+```
+pip install --user fotoparadies-orders-cli-avra
+```
 
 I do not provide the api endpoint. You will need to set this up on your own. If there is an ```api_endpoint.txt``` in the current path the program will load its content as the endpoint. You can also specify the endpoint in your environment variables as ```FOTOPARADIES_API_URL```. If your default shell is bash you can use:
 
