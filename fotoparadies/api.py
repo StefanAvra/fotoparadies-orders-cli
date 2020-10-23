@@ -1,9 +1,13 @@
 import requests
 import os
+from pathlib import Path
+
+
 
 URL = ''
-if os.path.exists('api_endpoint.txt'):
-    with open('api_endpoint.txt') as f:
+p = Path('~/fotoparadies_api_endpoint.txt').expanduser()
+if p.exists():
+    with p.open() as f:
         URL = f.readline()
 
 if 'FOTOPARADIES_API_URL' in os.environ:
